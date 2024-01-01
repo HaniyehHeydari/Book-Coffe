@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart</title>
+    <title>cart</title>
     <link rel="stylesheet" href="./cart.css">
 </head>
+
 <body>
     <!-- header -->
     <header class="header">
@@ -42,17 +44,90 @@
         </nav>
     </header>
     <!-- main -->
-    <main class="main">
-    <!-- aside -->
-    <aside id="sidebar" class="aside">
-        <div class="side">
-            <a href="./cart.html"><img src="./img/subscription.png" width="30px" height="30px"></a>
-            <a href="#"><img src="./img/chart.png" width="30px" height="30px"></a>
-            <a href="#"><img src="./img/cart.png" width="30px" height="30px"></a>
-        
-        </div>
+    <main class="main" dir="ltr">
+        <!-- aside -->
+        <aside id="sidebar" class="aside">
+            <div class="side">
+                <a href="./cart.html"><img src="./img/subscription.png" width="30px" height="30px"></a>
+                <a href="#"><img src="./img/chart.png" width="30px" height="30px"></a>
+                <a href="#"><img src="./img/cart.png" width="30px" height="30px"></a>
 
-    </aside>
-  </main>
+            </div>
+
+        </aside>
+        <!-- to-main -->
+        <div class="to-main">
+            <div class="table">
+                <div class="payment">
+                    <div class="coulmn" dir="rtl">
+                        <h1>پرداخت</h1>
+                        <div
+                            style="display: flex; border-bottom: 1px solid rgb(188, 188, 188); padding: 15px; column-gap: 140px;">
+                            <p>قیمت کالا</p>
+                            <p style="color: #f64141;">581,000 تومان</p>
+                        </div>
+                        <div
+                            style="display: flex; border-bottom: 1px solid rgb(188, 188, 188); padding: 15px; column-gap: 95px;">
+                            <p>تخفیف کالا</p>
+                            <p style="color: #f64141;">(10%) 58,100 تومان</p>
+                        </div>
+                        <div style="display: flex; padding: 15px; column-gap: 115px;">
+                            <p>جمع سبد خرید</p>
+                            <p style="color: #f64141;">522,900 تومان</p>
+                        </div>
+                        <button class="b">پرداخت</button>
+                    </div>
+                </div>
+                <div class="prouduct" dir="rtl">
+                    <div class="row">
+                        <img src="./img/book-two.jpg" width="100px" height="120px">
+                        <div class="mtn">
+                            <h2>کتاب چگونه عزت نفس خود را بسازیم؟</h2>
+                            <h4>تعداد صفحه: 152</h4>
+                            <h4>سال انتشار: 1402 </h4>
+                            <h4>انتشارات: نشر مون</h4>
+                            <h4>نویسنده: علی آبیار حسینی</h4>
+                        </div>
+                        <div class="Quantity">
+                            <h2 class="h">تعداد</h2>
+                            <input type="number" value="1">
+                            <h3>189,000 تومان</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <img src="./img/book-three.jpg" width="100px" height="120px">
+                        <div class="mtn">
+                            <h2>کتاب خردم کن</h2>
+                            <h4>تعداد صفحه: 262</h4>
+                            <h4>سال انتشار: 1402</h4>
+                            <h4>انتشارات: کتاب مجازی</h4>
+                            <h4>نویسنده: طاهره مافی</h4>
+                        </div>
+                        <div class="Quantityy">
+                            <h2 class="h">تعداد</h2>
+                            <input type="number" value="1">
+                            <h3>137,000 تومان</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <img src="./img/book-four.jpg" width="100px" height="120px">
+                        <div class="mtn">
+                            <h2>کتاب بازی های میراث</h2>
+                            <h4>تعداد صفحه: 360</h4>
+                            <h4>سال انتشار: 1402</h4>
+                            <h4>انتشارات: نشر نون</h4>
+                            <h4>نویسنده: جنیفر لین بارنز</h4>
+                        </div>
+                        <div class="Quantityyy">
+                            <h2 class="h">تعداد</h2>
+                            <input type="number" value="1">
+                            <h3>255,000 تومان</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
+
 </html>
