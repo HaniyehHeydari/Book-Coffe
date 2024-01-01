@@ -205,7 +205,7 @@ main {
   color: rgb(255, 255, 255);
   padding: 2px 10px;
   position: absolute;
-  left: 70px;
+  left: 120px;
   display: none;
 }
 .Guide:hover p {
@@ -216,7 +216,7 @@ main {
   color: rgb(255, 255, 255);
   padding: 2px 10px;
   position: absolute;
-  left: 120px;
+  left: 70px;
   display: none;
 }
 .Cart:hover p {
@@ -227,7 +227,7 @@ main {
   color: rgb(255, 255, 255);
   padding: 2px 10px;
   position: absolute;
-  left: 190px;
+  left: 15px;
   display: none;
 }
 .profile:hover p {
@@ -452,3 +452,7 @@ footer{
 .text-footr{
   margin-right: 400px;
 }
+.img{
+  display: none;
+}
+
