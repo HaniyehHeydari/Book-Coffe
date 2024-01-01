@@ -155,8 +155,8 @@ marquee {
 .row:hover {
   color: #f64141;
 }
-.row-one:hover{
-  color: #f64141; 
+.row-one:hover {
+  color: #f64141;
 }
 .row a {
   margin-right: 35px;
@@ -191,7 +191,7 @@ main {
   display: flex;
   padding: 20px 10px 20px 35px;
 }
-.box-two{
+.box-two {
   padding-left: 35px;
   padding-right: 30px;
 }
@@ -205,7 +205,7 @@ main {
   color: rgb(255, 255, 255);
   padding: 2px 10px;
   position: absolute;
-  left: 120px;
+  left: 130px;
   display: none;
 }
 .Guide:hover p {
@@ -216,7 +216,7 @@ main {
   color: rgb(255, 255, 255);
   padding: 2px 10px;
   position: absolute;
-  left: 70px;
+  left: 65px;
   display: none;
 }
 .Cart:hover p {
@@ -227,13 +227,13 @@ main {
   color: rgb(255, 255, 255);
   padding: 2px 10px;
   position: absolute;
-  left: 15px;
+  left: 5px;
   display: none;
 }
 .profile:hover p {
   display: block;
 }
-.title{
+.title {
   width: 150px;
   font-size: 30px;
   font-weight: 900;
@@ -241,158 +241,158 @@ main {
   border-radius: 15px;
   background-color: #f64141;
 }
-.box-title{
+.box-title {
   display: flex;
   column-gap: 840px;
 }
-.see-all{
+.see-all {
   font-size: 20px;
   font-weight: 900;
   margin-top: 40px;
 }
-.see-all:hover{
+.see-all:hover {
   cursor: pointer;
   color: #f64141;
 }
-.box-three{
+.box-three {
   margin: 40px;
 }
-.box-book{
+.box-book {
   display: flex;
   column-gap: 111px;
 }
-.box-book:hover{
+.box-book:hover {
   cursor: pointer;
 }
-.box-name-book{
+.box-name-book {
   font-size: 20px;
   font-weight: 900;
   display: flex;
   margin: 30px;
 }
-.name-book-one{
+.name-book-one {
   margin-left: 12px;
 }
-.name-book-one:hover{
+.name-book-one:hover {
   cursor: pointer;
   color: #f64141;
 }
-.name-book-two{
+.name-book-two {
   margin-left: 142px;
 }
-.name-book-two:hover{
+.name-book-two:hover {
   cursor: pointer;
   color: #f64141;
 }
-.name-book-three{
+.name-book-three {
   margin-left: 175px;
 }
-.name-book-three:hover{
+.name-book-three:hover {
   cursor: pointer;
   color: #f64141;
 }
-.name-book-four{
+.name-book-four {
   margin-left: 225px;
 }
-.name-book-four:hover{
+.name-book-four:hover {
   cursor: pointer;
   color: #f64141;
 }
-.titlee{
+.titlee {
   font-size: 30px;
   font-weight: 900;
   padding: 20px 485px;
   border-radius: 15px;
   background-color: #ffcb6e;
 }
-.box-four{
+.box-four {
   margin: 40px;
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
   padding: 15px 0px;
 }
-.box-genre{
+.box-genre {
   display: flex;
   column-gap: 6px;
 }
-.box-genre:hover{
+.box-genre:hover {
   cursor: pointer;
 }
-.text-genre{
+.text-genre {
   display: flex;
   font-size: 20px;
   font-weight: 900;
   margin-left: 40px;
   margin-top: 10px;
 }
-.name-genre-one{
+.name-genre-one {
   margin-left: 0px;
 }
-.name-genre-one:hover{
+.name-genre-one:hover {
   cursor: pointer;
   color: #ffcb6e;
 }
-.name-genre-two{
+.name-genre-two {
   margin-left: 65px;
 }
-.name-genre-two:hover{
+.name-genre-two:hover {
   cursor: pointer;
   color: #ffcb6e;
 }
-.name-genre-three{
+.name-genre-three {
   margin-left: 80px;
 }
-.name-genre-three:hover{
+.name-genre-three:hover {
   cursor: pointer;
   color: #ffcb6e;
 }
-.name-genre-four{
+.name-genre-four {
   margin-left: 75px;
 }
-.name-genre-four:hover{
+.name-genre-four:hover {
   cursor: pointer;
   color: #ffcb6e;
 }
-.name-genre-five{
+.name-genre-five {
   margin-left: 75px;
 }
-.name-genre-five:hover{
+.name-genre-five:hover {
   cursor: pointer;
   color: #ffcb6e;
 }
-.name-genre-six{
+.name-genre-six {
   margin-left: 90px;
 }
-.name-genre-six:hover{
+.name-genre-six:hover {
   cursor: pointer;
   color: #ffcb6e;
 }
-.name-genre-seven{
+.name-genre-seven {
   margin-left: 90px;
 }
-.name-genre-seven:hover{
+.name-genre-seven:hover {
   cursor: pointer;
   color: #ffcb6e;
 }
-.name-genre-eight{
+.name-genre-eight {
   margin-left: 80px;
 }
-.name-genre-eight:hover{
+.name-genre-eight:hover {
   cursor: pointer;
   color: #ffcb6e;
 }
-.name-genre-nine{
+.name-genre-nine {
   margin-left: 80px;
 }
-.name-genre-nine:hover{
+.name-genre-nine:hover {
   cursor: pointer;
   color: #ffcb6e;
 }
-.box-title2{
+.box-title2 {
   display: flex;
   column-gap: 815px;
 }
-.title2{
+.title2 {
   width: 163px;
   font-size: 30px;
   font-weight: 900;
@@ -400,59 +400,58 @@ main {
   border-radius: 15px;
   background-color: #f64141;
 }
-.book-five{
+.book-five {
   margin-left: 12px;
 }
-.book-five:hover{
+.book-five:hover {
   cursor: pointer;
   color: #f64141;
 }
-.book-six{
+.book-six {
   margin-left: 215px;
 }
-.book-six:hover{
+.book-six:hover {
   cursor: pointer;
   color: #f64141;
 }
-.book-seven{
+.book-seven {
   margin-left: 187px;
 }
-.book-seven:hover{
+.book-seven:hover {
   cursor: pointer;
   color: #f64141;
 }
-.book-eight{
+.book-eight {
   margin-left: 172px;
 }
-.book-eight:hover{
+.book-eight:hover {
   cursor: pointer;
   color: #f64141;
 }
-footer{
+footer {
   width: 100%;
   height: 300px;
   background-color: #3f3f3f;
 }
-.footer{
+.footer {
   display: flex;
   color: white;
   font-size: 18px;
   font-weight: 300;
   column-gap: 188px;
-  padding : 20px 100px 20px 20px;
+  padding: 20px 100px 20px 20px;
   direction: rtl;
 }
-.hr{
+.hr {
   width: 85%;
   margin-left: 150px;
 }
-.text-foot p{
+.text-foot p {
   margin-top: 20px;
 }
-.text-footr{
+.text-footr {
   margin-right: 400px;
 }
-.img{
+.img {
   display: none;
 }
-
