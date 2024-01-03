@@ -1,97 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>login-register</title>
-    <link rel="stylesheet" href="./login-register.css">
-</head>
+    <link rel="stylesheet" href="./login-register.css" />
+  </head>
 
-<body>
+  <body>
     <div class="container" id="container">
-        <!-- sign-up -->
-        <div class="form-container sign-up-container">
-            <form action="#">
-                <h1>ایجاد حساب کاربری</h1>
-                <div class="social-container">
-                    <a class="social" href="#"><img src="./img/instagram.png" width="45px" height="45px"></a>
-                    <a class="social" href="#"><img src="./img/logo2.jpg" width="47px" height="47px"></a>
-                    <a class="social" href="#"><img src="./img/feysbuk.jpg" width="45px" height="45px"></a>
-                </div>
-                <div class="user-name">
-                    <input id="name" type="text" placeholder="نام "
-                        style="background-image: url(./img/UserName.png); background-size: 22px; background-repeat: no-repeat; background-position: right;">
-
-                    <input id="lname" type="text" placeholder="نام خانوادگی">
-                </div>
-                <input id="email" type="email" placeholder="ایمیل"
-                    style="background-image: url(./img/email.png); background-size: 15px; background-repeat: no-repeat; background-position: right;">
-                <input id="password" type="password" placeholder="کلمه عبور"
-                    style="background-image: url(./img/password.png); background-size: 15px; background-repeat: no-repeat; background-position: right;">
-                <input id="codemli" placeholder="کدملی" max="10" pattern="[0-9]"
-                    style="background-image: url(./img/identification.png); background-size: 19px; background-repeat: no-repeat; background-position: right;">
-                <input id="phone" placeholder="شماره تلفن" max="11" pattern="[0-9]"
-                    style="background-image: url(./img/phone.png); background-size: 18px; background-repeat: no-repeat; background-position: right;">
-                <div class="education">
-                    <select id="edu"
-                        style="background-image: url(./img/education.png); background-size: 19px; background-repeat: no-repeat; background-position: right;">
-                        <option>مدرک تحصیلی</option>
-                        <option>دیپلم</option>
-                        <option>فوق دیپلم</option>
-                        <option>لیسانس</option>
-                        <option>فوق لیسانس</option>
-                        <option>دکتری</option>
-                    </select>
-
-                    <div id="gen" class="gender"> جنسیت
-                        <input id="gen" type="radio" name="gender">زن
-                        <input id="gen" type="radio" name="gender">مرد
-                    </div>
-                </div>
-                <div class="Rules">
-                    <input type="checkbox" style="width: 15px; height: 15px;">
-                    <span class="mtn">با قوانین و مقررات کافه کتاب موافقم</span>
-                </div>
-                <button onclick="validateForm()">ثبت نام</button>
-                <label id="error-message" class="error-message"></label>
-            </form>
-        </div>
-        <!-- sign-in -->
-        <div class="form-container sign-in-container">
-            <form action="#">
-                <h1>ورود</h1>
-                <div class="social-container">
-                    <a class="social" href="#"><img src="./img/instagram.png" width="45px" height="45px"></a>
-                    <a class="social" href="#"><img src="./img/logo2.jpg" width="47px" height="47px"> </a>
-                    <a class="social" href="#"><img src="./img/feysbuk.jpg" width="45px" height="45px"></a>
-                </div>
-                <input id="email" type="email" placeholder="ایمیل"
-                    style="background-image: url(./img/email.png); background-size: 15px; background-repeat: no-repeat; background-position: right;">
-                <input id="password" type="password" placeholder="کلمه عبور" pattern="[a-zA-Z0-10]"
-                    style="background-image: url(./img/password.png); background-size: 15px; background-repeat: no-repeat; background-position: right;">
-                <a href="#">کلمه عبور خود را فراموش کرده اید؟</a>
-                <button>ورود</button>
-            </form>
-        </div>
-        <div class="overlay-container">
-            <div class="overlay">
-                <!-- overlay-left -->
-                <div class="overlay-panel overlay-left">
-                    <h1>!خوش آمدید</h1>
-                    <p>برای حفظ ارتباط با ما لطفا با اطلاعات شخصی خود وارد شوید</p>
-                    <button class="ghost" id="signIn">ورود</button>
-                </div>
-                <!-- verlay-right -->
-                <div class="overlay-panel overlay-right">
-                    <h1>!سلام رفیق</h1>
-                    <p>مشخصات شخصی خود را وارد کنید و سفر را با ما آغاز کنید</p>
-                    <button class="ghost" id="signUp">ثبت نام</button>
-                </div>
+      <!-- sign-up -->
+      <div class="form-container sign-up-container">
+        <form action="#">
+          <h1>ایجاد حساب کاربری</h1>
+          <div class="social-container">
+            <a class="social" href="#"
+              ><img src="./img/instagram.png" width="45px" height="45px"
+            /></a>
+            <a class="social" href="#"
+              ><img src="./img/logo2.jpg" width="47px" height="47px"
+            /></a>
+            <a class="social" href="#"
+              ><img src="./img/feysbuk.jpg" width="45px" height="45px"
+            /></a>
+          </div>
+          <div class="user-name">
+            <input
+              id="name"
+              type="text"
+              placeholder="نام "
+              style="
+                background-image: url(./img/UserName.png);
+                background-size: 22px;
+                background-repeat: no-repeat;
+                background-position: right;
+              "
+            />
+            <input id="lname" type="text" placeholder="نام خانوادگی" />
+          </div>
+          <div class="message-error">
+            <label id="error-fname" class="error-fname"></label>
+            <label id="error-lname" class="error-lname"></label>
+          </div>
+          <input
+            id="email"
+            type="email"
+            placeholder="ایمیل"
+            style="
+              background-image: url(./img/email.png);
+              background-size: 15px;
+              background-repeat: no-repeat;
+              background-position: right;
+            "
+          />
+        
+          <input
+            id="password"
+            type="password"
+            placeholder="کلمه عبور"
+            style="
+              background-image: url(./img/password.png);
+              background-size: 15px;
+              background-repeat: no-repeat;
+              background-position: right;
+            "
+          />
+       
+          <input
+            id="codemli"
+            placeholder="کدملی"
+            max="10"
+            pattern="[0-9]"
+            style="
+              background-image: url(./img/identification.png);
+              background-size: 19px;
+              background-repeat: no-repeat;
+              background-position: right;
+            "
+          />
+      
+          <input
+            id="phone"
+            placeholder="شماره تلفن"
+            max="11"
+            pattern="[0-9]"
+            style="
+              background-image: url(./img/phone.png);
+              background-size: 18px;
+              background-repeat: no-repeat;
+              background-position: right;
+            "
+          />
+       
+          <div class="education">
+            <select
+              id="edu"
+              style="
+                background-image: url(./img/education.png);
+                background-size: 19px;
+                background-repeat: no-repeat;
+                background-position: right;
+              "
+            >
+              <option>مدرک تحصیلی</option>
+              <option>دیپلم</option>
+              <option>فوق دیپلم</option>
+              <option>لیسانس</option>
+              <option>فوق لیسانس</option>
+              <option>دکتری</option>
+            </select>
+            <div id="gen" class="gender">
+              جنسیت <input id="gen" type="radio" name="gender" />زن
+              <input id="gen" type="radio" name="gender" />مرد
             </div>
+          </div>
+          <div class="Rules">
+            <input type="checkbox" style="width: 15px; height: 15px" />
+            <span class="mtn">با قوانین و مقررات کافه کتاب موافقم</span>
+          </div>
+          <button onclick="validateForm()">ثبت نام</button>
+        </form>
+      </div>
+      <!-- sign-in -->
+      <div class="form-container sign-in-container">
+        <form action="#">
+          <h1>ورود</h1>
+          <div class="social-container">
+            <a class="social" href="#"
+              ><img src="./img/instagram.png" width="45px" height="45px"
+            /></a>
+            <a class="social" href="#"
+              ><img src="./img/logo2.jpg" width="47px" height="47px" />
+            </a>
+            <a class="social" href="#"
+              ><img src="./img/feysbuk.jpg" width="45px" height="45px"
+            /></a>
+          </div>
+          <input
+            id="email"
+            type="email"
+            placeholder="ایمیل"
+            style="
+              background-image: url(./img/email.png);
+              background-size: 15px;
+              background-repeat: no-repeat;
+              background-position: right;
+            "
+          />
+          <input
+            id="password"
+            type="password"
+            placeholder="کلمه عبور"
+            pattern="[a-zA-Z0-10]"
+            style="
+              background-image: url(./img/password.png);
+              background-size: 15px;
+              background-repeat: no-repeat;
+              background-position: right;
+            "
+          />
+          <a href="#">کلمه عبور خود را فراموش کرده اید؟</a>
+          <button>ورود</button>
+        </form>
+      </div>
+      <div class="overlay-container">
+        <div class="overlay">
+          <!-- overlay-left -->
+          <div class="overlay-panel overlay-left">
+            <h1>!خوش آمدید</h1>
+            <p>برای حفظ ارتباط با ما لطفا با اطلاعات شخصی خود وارد شوید</p>
+            <button class="ghost" id="signIn">ورود</button>
+          </div>
+          <!-- verlay-right -->
+          <div class="overlay-panel overlay-right">
+            <h1>!سلام رفیق</h1>
+            <p>مشخصات شخصی خود را وارد کنید و سفر را با ما آغاز کنید</p>
+            <button class="ghost" id="signUp">ثبت نام</button>
+          </div>
         </div>
+      </div>
     </div>
     <script src="./login-register.js"></script>
-</body>
-
+  </body>
 </html>
