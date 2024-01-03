@@ -28,6 +28,7 @@ genInput.addEventListener("input", validategenInput);
 
 const errorfname = document.getElementById('error-fname');
 const errorlname = document.getElementById('error-lname');
+const erroremail = document.getElementById('error-email');
 
 function validateForm() {
     var name = document.getElementById("name").value;
@@ -89,13 +90,13 @@ function validateemailInput() {
 
     if (email === "") {
         emailInput.style.borderColor = "red";
-        errorMessage.textContent = 'لطفا ایمیل را به صورت صحیح وارد کنید';
+        erroremail.textContent = 'لطفا ایمیل را به صورت صحیح وارد کنید';
     } else if (namePattern.test(email)) {
         emailInput.style.borderColor = "green";
-        errorMessage.textContent = "";
+        erroremail.textContent = "";
     } else {
         emailInput.style.borderColor = "red";
-        errorMessage.textContent = 'لطفا  نام خانوادگی را به صورت صحیح وارد کنید';
+        erroremail.textContent = 'لطفا  نام خانوادگی را به صورت صحیح وارد کنید';
     }
 }
 
