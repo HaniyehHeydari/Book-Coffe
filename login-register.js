@@ -13,6 +13,8 @@ const firstNameInput = document.getElementById("name");
 firstNameInput.addEventListener("input", validateFirstName);
 const lastNameInput = document.getElementById("lname");
 lastNameInput.addEventListener("input", validateLastName);
+const emailInput = document.getElementById("email");
+emailInput.addEventListener("input", validateemailInput);
 
 const errorMessage = document.getElementById('error-message');
 
@@ -50,6 +52,7 @@ function validateFirstName() {
         errorMessage.textContent = "";
     } else {
         firstNameInput.style.borderColor = "red";
+        errorMessage.textContent = 'لطفا  نام را به صورت صحیح وارد کنید';
     }
 }
 
@@ -65,5 +68,22 @@ function validateLastName() {
         errorMessage.textContent = "";
     } else {
         lastNameInput.style.borderColor = "red";
+        errorMessage.textContent = 'لطفا  نام خانوادگی را به صورت صحیح وارد کنید';
+    }
+}
+
+function validateemailInput() {
+    const email = emailInput.value.trim();
+    const namePattern = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+    if (email === "") {
+        emailInput.style.borderColor = "red";
+        errorMessage.textContent = 'لطفا ایمیل را به صورت صحیح وارد کنید';
+    } else if (namePattern.test(email)) {
+        emailInput.style.borderColor = "green";
+        errorMessage.textContent = "";
+    } else {
+        emailInput.style.borderColor = "red";
+        errorMessage.textContent = 'لطفا  نام خانوادگی را به صورت صحیح وارد کنید';
     }
 }
