@@ -310,3 +310,7 @@ footer {
   text-align: center;
   z-index: 999;
 }
+
+.error {
+  border: 1px solid red;
+}
