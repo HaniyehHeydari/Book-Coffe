@@ -30,6 +30,7 @@ const errorfname = document.getElementById('error-fname');
 const errorlname = document.getElementById('error-lname');
 const erroremail = document.getElementById('error-email');
 const errorpassword = document.getElementById('error-password');
+const errorcode = document.getElementById('error-code');
 
 function validateForm() {
     var name = document.getElementById("name").value;
@@ -140,13 +141,13 @@ function validatecodemliInput() {
 
     if (codemliValue === "") {
         codemliInput.style.borderColor = "red";
-        errorMessage.textContent = 'لطفا کدملی را به صورت صحیح وارد کنید';
+        errorcode.textContent = 'لطفا کدملی را به صورت صحیح وارد کنید';
     } else if (!NationalCodeValidation(codemliValue)) {
         codemliInput.style.borderColor = "red";
-        errorMessage.textContent = 'لطفا کدملی را به صورت صحیح وارد کنید';
+        errorcode.textContent = 'لطفا کدملی را به صورت صحیح وارد کنید';
     } else {
         codemliInput.style.borderColor = "green";
-        errorMessage.textContent = "";
+        errorcode.textContent = "";
     }
 }
 
