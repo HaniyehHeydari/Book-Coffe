@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>login-register</title>
     <link rel="stylesheet" href="./login-register.css">
 </head>
 
@@ -22,6 +22,7 @@
                 <div class="user-name">
                     <input id="name" type="text" placeholder="نام "
                         style="background-image: url(./img/UserName.png); background-size: 22px; background-repeat: no-repeat; background-position: right;">
+
                     <input id="lname" type="text" placeholder="نام خانوادگی">
                 </div>
                 <input id="email" type="email" placeholder="ایمیل"
@@ -42,6 +43,7 @@
                         <option>فوق لیسانس</option>
                         <option>دکتری</option>
                     </select>
+
                     <div id="gen" class="gender"> جنسیت
                         <input id="gen" type="radio" name="gender">زن
                         <input id="gen" type="radio" name="gender">مرد
@@ -52,7 +54,7 @@
                     <span class="mtn">با قوانین و مقررات کافه کتاب موافقم</span>
                 </div>
                 <button onclick="validateForm()">ثبت نام</button>
-                <p id="error-message"></p>
+                <label id="error-message" class="error-message"></label>
             </form>
         </div>
         <!-- sign-in -->
