@@ -9,7 +9,9 @@ signUpButton.addEventListener('click', () => {
 signInButton.addEventListener('click', () => {
     container.classList.remove("right-panel-active");
 });
-
+const firstNameInput = document.getElementById("name");
+const errorMessage = document.getElementById('error-message');
+firstNameInput.addEventListener("input", validateFirstName);
 
 function validateForm() {
     var name = document.getElementById("name").value;
@@ -21,7 +23,7 @@ function validateForm() {
     var edu = document.getElementById("edu").value;
     var gen = document.getElementById("gen").value;
 
-    if (name === "" || lname === "" || email === ""   || password === ""|| codemli === "" || phone === "" || name === "مدرک تحصیلی" || gen === "") {
+    if (name === "" || lname === "" || email === "" || password === "" || codemli === "" || phone === "" || name === "مدرک تحصیلی" || gen === "") {
         document.getElementById("name").classList.add("error");
         document.getElementById("lname").classList.add("error");
         document.getElementById("email").classList.add("error");
@@ -31,4 +33,19 @@ function validateForm() {
         document.getElementById("edu").classList.add("error");
         document.getElementById("gen").classList.add("error");
     } else {}
+}
+
+function validateFirstName() {
+    const firstName = firstNameInput.value.trim();
+    const namePattern = /^[\u0600-\u06FF\sA-Za-z]{3,}$/;
+
+    if (firstName === "" || firstName.length < 3) {
+        firstNameInput.style.borderColor = "red";
+        errorMessage.textContent = 'لطفا  نام را به صورت صحیح وارد کنید';
+    } else if (namePattern.test(firstName)) {
+        firstNameInput.style.borderColor = "green";
+        errorMessage.textContent = "";
+    } else {
+        firstNameInput.style.borderColor = "red";
+    }
 }
