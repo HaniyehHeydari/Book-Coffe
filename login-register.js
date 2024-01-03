@@ -31,6 +31,8 @@ const errorlname = document.getElementById('error-lname');
 const erroremail = document.getElementById('error-email');
 const errorpassword = document.getElementById('error-password');
 const errorcode = document.getElementById('error-code');
+const errorphone = document.getElementById('error-phone');
+
 
 function validateForm() {
     var name = document.getElementById("name").value;
@@ -157,13 +159,13 @@ function validatephoneInput() {
 
     if (phone === "") {
         phoneInput.style.borderColor = "red";
-        errorMessage.textContent = 'لطفا شماره تلفن را به صورت صحیح وارد کنید';
+        errorphone.textContent = 'لطفا شماره تلفن را به صورت صحیح وارد کنید';
     } else if (namePattern.test(phone)) {
         phoneInput.style.borderColor = "green";
-        errorMessage.textContent = "";
+        errorphone.textContent = "";
     } else {
         phoneInput.style.borderColor = "red";
-        errorMessage.textContent = 'لطفا شماره تلفن را به صورت صحیح وارد کنید';
+        errorphone.textContent = 'لطفا شماره تلفن را به صورت صحیح وارد کنید';
     }
 }
 
