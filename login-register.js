@@ -14,9 +14,11 @@ signInButton.addEventListener('click', () => {
 function validateForm() {
     var name = document.getElementById("name").value;
     var lname = document.getElementById("lname").value;
+    var email = document.getElementById("email").value;
 
-    if (name === "" || lname === "" ) {
+    if (name === "" || lname === "" || codemli === "" ) {
         document.getElementById("name").classList.add("error");
         document.getElementById("lname").classList.add("error");
+        document.getElementById("email").classList.add("error");
     } else {}
 }
