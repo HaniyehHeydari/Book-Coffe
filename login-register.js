@@ -13,7 +13,10 @@ signInButton.addEventListener('click', () => {
 
 function validateForm() {
     var name = document.getElementById("name").value;
-    if (name === "") {
+    var lname = document.getElementById("lname").value;
+
+    if (name === "" || lname === "" ) {
         document.getElementById("name").classList.add("error");
+        document.getElementById("lname").classList.add("error");
     } else {}
 }
