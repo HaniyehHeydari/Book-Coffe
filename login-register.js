@@ -23,6 +23,8 @@ const phoneInput = document.getElementById("phone");
 phoneInput.addEventListener("input", validatephoneInput);
 const eduInput = document.getElementById("edu");
 eduInput.addEventListener("input", validateeduInput);
+const genInput = document.getElementById("gen");
+genInput.addEventListener("input", validategenInput);
 
 const errorMessage = document.getElementById('error-message');
 
@@ -173,5 +175,21 @@ function validateeduInput() {
     } else {
         eduInput.style.borderColor = "red";
         errorMessage.textContent = 'لطفا مدرک تحصیلی را به صورت صحیح وارد کنید';
+    }
+}
+
+function validategenInput() {
+    var genderOptions = document.querySelectorAll('#register input[name="gender"]');
+    var isGenderSelected = Array.from(genderOptions).some(option => option.checked);
+
+    if (isGenderSelected) {
+        genInput.style.borderColor = "red";
+        errorMessage.textContent = 'لطفا جنسیت را به صورت صحیح وارد کنید';
+    } else if (!isGenderSelected) {
+        genInput.style.borderColor = "green";
+        errorMessage.textContent = "";
+    } else {
+        genInput.style.borderColor = "red";
+        errorMessage.textContent = 'لطفا جنسیت را به صورت صحیح وارد کنید';
     }
 }
