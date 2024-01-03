@@ -17,6 +17,8 @@ const emailInput = document.getElementById("email");
 emailInput.addEventListener("input", validateemailInput);
 const passwordInput = document.getElementById("password");
 passwordInput.addEventListener("input", validatepasswordInput);
+const codemliInput = document.getElementById("codemli");
+codemliInput.addEventListener("input", validatecodemliInput);
 
 const errorMessage = document.getElementById('error-message');
 
@@ -103,5 +105,38 @@ function validatepasswordInput() {
     } else {
         passwordInput.style.borderColor = "red";
         errorMessage.textContent = 'لطفا کلمه عبور را به صورت صحیح وارد کنید';
+    }
+}
+
+function NationalCodeValidation(codemli) {
+    if (/^[0-9]{10}$/.test(codemli)) {
+        let sumCodemelliNumber = 0;
+        for (let i = 0; i < 9; i++) {
+            sumCodemelliNumber += parseInt(codemli[i]) * (10 - i);
+        }
+        let rem = sumCodemelliNumber % 11;
+        let lastNationalCodeDigit = parseInt(codemli[9]);
+        if ((rem > 1 && (11 - rem === lastNationalCodeDigit)) || (rem <= 1 && rem === lastNationalCodeDigit)) {
+            return true;
+        } else {
+            return false;
+        }
+    } else {
+        return false;
+    }
+}
+
+function validatecodemliInput() {
+    const codemliValue = codemliInput.value.trim();
+
+    if (codemliValue === "") {
+        codemliInput.style.borderColor = "red";
+        errorMessage.textContent = 'لطفا کدملی را به صورت صحیح وارد کنید';
+    } else if (!NationalCodeValidation(codemliValue)) {
+        codemliInput.style.borderColor = "red";
+        errorMessage.textContent = 'لطفا کدملی را به صورت صحیح وارد کنید';
+    } else {
+        codemliInput.style.borderColor = "green";
+        errorMessage.textContent = "";
     }
 }
