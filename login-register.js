@@ -29,6 +29,7 @@ genInput.addEventListener("input", validategenInput);
 const errorfname = document.getElementById('error-fname');
 const errorlname = document.getElementById('error-lname');
 const erroremail = document.getElementById('error-email');
+const errorpassword = document.getElementById('error-password');
 
 function validateForm() {
     var name = document.getElementById("name").value;
@@ -106,13 +107,13 @@ function validatepasswordInput() {
 
     if (password === "" || password.length < 8) {
         passwordInput.style.borderColor = "red";
-        errorMessage.textContent = 'لطفا کلمه عبور را به صورت صحیح وارد کنید';
+        errorpassword.textContent = 'لطفا کلمه عبور را به صورت صحیح وارد کنید';
     } else if (namePattern.test(password)) {
         passwordInput.style.borderColor = "green";
-        errorMessage.textContent = "";
+        errorpassword.textContent = "";
     } else {
         passwordInput.style.borderColor = "red";
-        errorMessage.textContent = 'لطفا کلمه عبور را به صورت صحیح وارد کنید';
+        errorpassword.textContent = 'لطفا کلمه عبور را به صورت صحیح وارد کنید';
     }
 }
 
