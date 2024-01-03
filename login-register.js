@@ -10,8 +10,11 @@ signInButton.addEventListener('click', () => {
     container.classList.remove("right-panel-active");
 });
 const firstNameInput = document.getElementById("name");
-const errorMessage = document.getElementById('error-message');
 firstNameInput.addEventListener("input", validateFirstName);
+const lastNameInput = document.getElementById("lname");
+lastNameInput.addEventListener("input", validateLastName);
+
+const errorMessage = document.getElementById('error-message');
 
 function validateForm() {
     var name = document.getElementById("name").value;
@@ -47,5 +50,20 @@ function validateFirstName() {
         errorMessage.textContent = "";
     } else {
         firstNameInput.style.borderColor = "red";
+    }
+}
+
+function validateLastName() {
+    const lastName = lastNameInput.value.trim();
+    const namePattern = /^[\u0600-\u06FF\sA-Za-z]{3,}$/;
+
+    if (lastName === "" || lastName.length < 3) {
+        lastNameInput.style.borderColor = "red";
+        errorMessage.textContent = 'لطفا  نام خانوادگی را به صورت صحیح وارد کنید';
+    } else if (namePattern.test(lastName)) {
+        lastNameInput.style.borderColor = "green";
+        errorMessage.textContent = "";
+    } else {
+        lastNameInput.style.borderColor = "red";
     }
 }
