@@ -315,3 +315,6 @@ footer {
   border: none;
   border-bottom: 1px solid red;
 }
+.error-message {
+  padding-left: 145px;
+}
