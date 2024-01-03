@@ -19,6 +19,8 @@ const passwordInput = document.getElementById("password");
 passwordInput.addEventListener("input", validatepasswordInput);
 const codemliInput = document.getElementById("codemli");
 codemliInput.addEventListener("input", validatecodemliInput);
+const phoneInput = document.getElementById("phone");
+phoneInput.addEventListener("input", validatephoneInput);
 
 const errorMessage = document.getElementById('error-message');
 
@@ -138,5 +140,21 @@ function validatecodemliInput() {
     } else {
         codemliInput.style.borderColor = "green";
         errorMessage.textContent = "";
+    }
+}
+
+function validatephoneInput() {
+    const phone = phoneInput.value.trim();
+    const namePattern = /^(09(1[0-9]|3[1-9]|2[1-9])-?[0-9]{3}-?[0-9]{4})$/;
+
+    if (phone === "") {
+        phoneInput.style.borderColor = "red";
+        errorMessage.textContent = 'لطفا شماره تلفن را به صورت صحیح وارد کنید';
+    } else if (namePattern.test(phone)) {
+        phoneInput.style.borderColor = "green";
+        errorMessage.textContent = "";
+    } else {
+        phoneInput.style.borderColor = "red";
+        errorMessage.textContent = 'لطفا شماره تلفن را به صورت صحیح وارد کنید';
     }
 }
