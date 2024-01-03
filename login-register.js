@@ -21,6 +21,8 @@ const codemliInput = document.getElementById("codemli");
 codemliInput.addEventListener("input", validatecodemliInput);
 const phoneInput = document.getElementById("phone");
 phoneInput.addEventListener("input", validatephoneInput);
+const eduInput = document.getElementById("edu");
+eduInput.addEventListener("input", validateeduInput);
 
 const errorMessage = document.getElementById('error-message');
 
@@ -156,5 +158,20 @@ function validatephoneInput() {
     } else {
         phoneInput.style.borderColor = "red";
         errorMessage.textContent = 'لطفا شماره تلفن را به صورت صحیح وارد کنید';
+    }
+}
+
+function validateeduInput() {
+    const edu = eduInput.value.trim();
+
+    if (edu === "مدرک تحصیلی") {
+        eduInput.style.borderColor = "red";
+        errorMessage.textContent = 'لطفا مدرک تحصیلی را به صورت صحیح وارد کنید';
+    } else if (edu !== "مدرک تحصیلی") {
+        eduInput.style.borderColor = "green";
+        errorMessage.textContent = "";
+    } else {
+        eduInput.style.borderColor = "red";
+        errorMessage.textContent = 'لطفا مدرک تحصیلی را به صورت صحیح وارد کنید';
     }
 }
