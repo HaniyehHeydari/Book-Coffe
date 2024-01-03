@@ -346,3 +346,10 @@ footer {
   margin-right: 50px;
   color: red;
 }
+.error-code{
+  position: absolute;
+  margin-top:153px;
+  right: 0;
+  margin-right: 50px;
+  color: red;
+}
