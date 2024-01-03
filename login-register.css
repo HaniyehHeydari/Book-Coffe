@@ -353,3 +353,10 @@ footer {
   margin-right: 50px;
   color: red;
 }
+.error-phone{
+  position: absolute;
+  margin-top:277px;
+  right: 0;
+  margin-right: 50px;
+  color: red;
+}
