@@ -20,20 +20,20 @@
                     <a class="social" href="#"><img src="./img/feysbuk.jpg" width="45px" height="45px"></a>
                 </div>
                 <div class="user-name">
-                    <input type="text" placeholder="نام "
+                    <input id="name" type="text" placeholder="نام "
                         style="background-image: url(./img/UserName.png); background-size: 22px; background-repeat: no-repeat; background-position: right;">
-                    <input type="text" placeholder="نام خانوادگی">
+                    <input id="lname" type="text" placeholder="نام خانوادگی">
                 </div>
-                <input type="email" placeholder="ایمیل" 
+                <input id="email" type="email" placeholder="ایمیل"
                     style="background-image: url(./img/email.png); background-size: 15px; background-repeat: no-repeat; background-position: right;">
-                <input type="password" placeholder="کلمه عبور"
+                <input id="password" type="password" placeholder="کلمه عبور"
                     style="background-image: url(./img/password.png); background-size: 15px; background-repeat: no-repeat; background-position: right;">
-                <input type="number" placeholder="کدملی" max="10" pattern="[0-9]"
+                <input id="codemli" placeholder="کدملی" max="10" pattern="[0-9]"
                     style="background-image: url(./img/identification.png); background-size: 19px; background-repeat: no-repeat; background-position: right;">
-                <input type="number" placeholder="شماره تلفن" max="11"  pattern="[0-9]"
+                <input id="phone" placeholder="شماره تلفن" max="11" pattern="[0-9]"
                     style="background-image: url(./img/phone.png); background-size: 18px; background-repeat: no-repeat; background-position: right;">
                 <div class="education">
-                    <select
+                    <select id="edu"
                         style="background-image: url(./img/education.png); background-size: 19px; background-repeat: no-repeat; background-position: right;">
                         <option>مدرک تحصیلی</option>
                         <option>دیپلم</option>
@@ -42,14 +42,14 @@
                         <option>فوق لیسانس</option>
                         <option>دکتری</option>
                     </select>
-                    <div class="gender"> جنسیت
-                        <input type="radio" name="gender">زن
-                        <input type="radio" name="gender">مرد
+                    <div id="gen" class="gender"> جنسیت
+                        <input id="gen" type="radio" name="gender">زن
+                        <input id="gen" type="radio" name="gender">مرد
                     </div>
                 </div>
                 <div class="Rules">
-                <input type="checkbox" style="width: 15px; height: 15px;">
-                <span class="mtn">با قوانین و مقررات کافه کتاب موافقم</span>
+                    <input type="checkbox" style="width: 15px; height: 15px;">
+                    <span class="mtn">با قوانین و مقررات کافه کتاب موافقم</span>
                 </div>
                 <button>ثبت نام</button>
             </form>
@@ -63,13 +63,12 @@
                     <a class="social" href="#"><img src="./img/logo2.jpg" width="47px" height="47px"> </a>
                     <a class="social" href="#"><img src="./img/feysbuk.jpg" width="45px" height="45px"></a>
                 </div>
-                <input id="email" type="email" placeholder="ایمیل" 
+                <input id="email" type="email" placeholder="ایمیل"
                     style="background-image: url(./img/email.png); background-size: 15px; background-repeat: no-repeat; background-position: right;">
                 <input id="password" type="password" placeholder="کلمه عبور" pattern="[a-zA-Z0-10]"
                     style="background-image: url(./img/password.png); background-size: 15px; background-repeat: no-repeat; background-position: right;">
                 <a href="#">کلمه عبور خود را فراموش کرده اید؟</a>
-                <button onclick="check()">ورود</button>
-                <div id="error"></div>
+                <button>ورود</button>
             </form>
         </div>
         <div class="overlay-container">
