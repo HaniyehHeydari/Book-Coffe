@@ -19,8 +19,9 @@ function validateForm() {
     var codemli = document.getElementById("codemli").value;
     var phone = document.getElementById("phone").value;
     var edu = document.getElementById("edu").value;
-   
-    if (name === "" || lname === "" || email === ""   || password === ""|| codemli === "" || phone === "" || name === "مدرک تحصیلی" ) {
+    var gen = document.getElementById("gen").value;
+
+    if (name === "" || lname === "" || email === ""   || password === ""|| codemli === "" || phone === "" || name === "مدرک تحصیلی" || gen === "") {
         document.getElementById("name").classList.add("error");
         document.getElementById("lname").classList.add("error");
         document.getElementById("email").classList.add("error");
@@ -28,6 +29,6 @@ function validateForm() {
         document.getElementById("codemli").classList.add("error");
         document.getElementById("phone").classList.add("error");
         document.getElementById("edu").classList.add("error");
-      
+        document.getElementById("gen").classList.add("error");
     } else {}
 }
