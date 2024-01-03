@@ -27,7 +27,7 @@ const genInput = document.getElementById("gen");
 genInput.addEventListener("input", validategenInput);
 
 const errorfname = document.getElementById('error-fname');
-
+const errorlname = document.getElementById('error-lname');
 
 function validateForm() {
     var name = document.getElementById("name").value;
@@ -73,13 +73,13 @@ function validateLastName() {
 
     if (lastName === "" || lastName.length < 3) {
         lastNameInput.style.borderColor = "red";
-        errorMessage.textContent = 'لطفا  نام خانوادگی را به صورت صحیح وارد کنید';
+        errorlname.textContent = 'لطفا  نام خانوادگی را به صورت صحیح وارد کنید';
     } else if (namePattern.test(lastName)) {
         lastNameInput.style.borderColor = "green";
-        errorMessage.textContent = "";
+        errorlname.textContent = "";
     } else {
         lastNameInput.style.borderColor = "red";
-        errorMessage.textContent = 'لطفا  نام خانوادگی را به صورت صحیح وارد کنید';
+        errorlname.textContent = 'لطفا  نام خانوادگی را به صورت صحیح وارد کنید';
     }
 }
 
