@@ -315,6 +315,14 @@ footer {
   border: none;
   border-bottom: 1px solid red;
 }
-.error-message {
-  padding-left: 145px;
+.message-error {
+  display: flex;
 }
+.error-fname {
+  font-size: 12px;
+  right: 0;
+  position: fixed;
+  margin-right: 45px;
+  color: red;
+}
+
