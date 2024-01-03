@@ -325,4 +325,24 @@ footer {
   margin-right: 45px;
   color: red;
 }
-
+.error-lname {
+  font-size: 12px;
+  left: 0;
+  position: fixed;
+  margin-left: 45px;
+  color: red;
+}
+.error-email{
+  position: absolute;
+  margin-top:-92px;
+  right: 0;
+  margin-right: 50px;
+  color: red;
+}
+.error-password{
+  position: absolute;
+  margin-top:24px;
+  right: 0;
+  margin-right: 50px;
+  color: red;
+}
