@@ -28,10 +28,6 @@ genInput.addEventListener("input", validategenInput);
 
 const errorfname = document.getElementById('error-fname');
 const errorlname = document.getElementById('error-lname');
-const erroremail = document.getElementById('error-email');
-const errorpassword = document.getElementById('error-password');
-const errorcode = document.getElementById('error-code');
-const errorphone = document.getElementById('error-phone');
 
 
 function validateForm() {
@@ -100,7 +96,7 @@ function validateemailInput() {
         erroremail.textContent = "";
     } else {
         emailInput.style.borderColor = "red";
-        erroremail.textContent = 'لطفا  نام خانوادگی را به صورت صحیح وارد کنید';
+        erroremail.textContent = 'لطفا ایمیل را به صورت صحیح وارد کنید';
     }
 }
 
