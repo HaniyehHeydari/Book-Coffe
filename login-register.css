@@ -346,5 +346,12 @@ footer {
   margin-right: 50px;
   color: red;
 }
+.error-code{
+  position: absolute;
+  margin-top:175px;
+  right: 0;
+  margin-right: 50px;
+  color: red;
+}
 
 
