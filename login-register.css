@@ -332,3 +332,11 @@ footer {
   margin-left: 45px;
   color: red;
 }
+.error-email{
+  position: absolute;
+  margin-top:-103px;
+  right: 0;
+  margin-right: 50px;
+  color: red;
+}
+
