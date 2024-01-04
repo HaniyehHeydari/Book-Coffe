@@ -88,7 +88,7 @@ input {
   text-align: right;
   border: none;
   border-bottom: 1px solid #333;
-  padding: 12px 25px;
+  padding: 20px 25px 12px 25px;
   margin: 8px 0;
   width: 100%;
   font-size: 15px;
@@ -330,33 +330,5 @@ footer {
   left: 0;
   position: fixed;
   margin-left: 45px;
-  color: red;
-}
-.error-email{
-  position: absolute;
-  margin-top:-92px;
-  right: 0;
-  margin-right: 50px;
-  color: red;
-}
-.error-password{
-  position: absolute;
-  margin-top:24px;
-  right: 0;
-  margin-right: 50px;
-  color: red;
-}
-.error-code{
-  position: absolute;
-  margin-top:153px;
-  right: 0;
-  margin-right: 50px;
-  color: red;
-}
-.error-phone{
-  position: absolute;
-  margin-top:277px;
-  right: 0;
-  margin-right: 50px;
   color: red;
 }
