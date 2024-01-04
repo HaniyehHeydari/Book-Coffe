@@ -339,4 +339,12 @@ footer {
   margin-right: 50px;
   color: red;
 }
+.error-password{
+  position: absolute;
+  margin-top:32px;
+  right: 0;
+  margin-right: 50px;
+  color: red;
+}
+
 
