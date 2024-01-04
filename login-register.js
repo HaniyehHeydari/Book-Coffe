@@ -29,6 +29,7 @@ genInput.addEventListener("input", validategenInput);
 const errorfname = document.getElementById('error-fname');
 const errorlname = document.getElementById('error-lname');
 const erroremail = document.getElementById('error-email');
+const errorpassword = document.getElementById('error-password');
 
 function validateForm() {
     var name = document.getElementById("name").value;
