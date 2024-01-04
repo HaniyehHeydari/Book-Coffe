@@ -31,6 +31,8 @@ const errorlname = document.getElementById('error-lname');
 const erroremail = document.getElementById('error-email');
 const errorpassword = document.getElementById('error-password');
 const errorcode = document.getElementById('error-code');
+const errorphone = document.getElementById('error-phone');
+
 
 function validateForm() {
     var name = document.getElementById("name").value;
